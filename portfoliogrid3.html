@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fontawesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- jQuery Mean menu -->
+    <link rel="stylesheet" href="assets/css/plugins/meanmenu.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/plugins/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/plugins/owl.carousel.min.css" />
+    <!-- Styles files -->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Portfolio Grid 3</title>
+  </head>
+  <body>
+     <!-- Header section markup --> 
+   <header id="header">
+    <div class="container">
+      <nav class="navbar">
+        <h1 class="logo">K</h1>
+        <ul class="menu_lists">
+          <li class="menu_item has_child">
+            <a href="#" class="menu_link active">Home</a>
+          </li>
+           <li class="menu_item has_child">
+            <a  class="menu_link">Pages</a>
+            <ul class="dropdown_menu left">
+               <li class="menu_item has_child_deep">
+                <a href="#" class="menu_link">About</a>
+                <ul class="deep_dropdown_menu deep_right">           
+                   <li class="menu_item"><a href="about.html" class="menu_link">About Us</a></li>
+                </ul>
+              </li>
+               <li class="menu_item has_child_deep">
+                <a href="#" class="menu_link">Services</a>
+                <ul class="deep_dropdown_menu deep_right">
+                   <li class="menu_item"><a href="servicegrid.html" class="menu_link">Service Grid</a></li>
+                   <li class="menu_item"><a href="servicelist.html" class="menu_link">Service List</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html" class="menu_link">Contact</a></li>
+            </ul>
+          </li>
+           <li class="menu_item has_child">
+            <a href="#" class="menu_link">Portfolio layouts</a>
+            <ul class="dropdown_menu left">
+               <li class="menu_item has_child_deep">
+                <a href="#" class="menu_link">Grid</a>
+                <ul class="deep_dropdown_menu deep_right">
+                   <li class="menu_item"><a href="portfoliogrid2.html" class="menu_link">Grid 2 column</a></li>
+                   <li class="menu_item"><a href="portfoliogrid3.html" class="menu_link">Grid 3 column</a></li>
+                   <li class="menu_item"><a href="portfoliogrid4.html" class="menu_link">Grid 4 column</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+           <li class="menu_item has_child">
+            <a href="#" class="menu_link">Portfolio Single</a>
+          </li>
+           <li class="menu_item has_child">
+            <a href="#" class="menu_link">Blog</a>
+            <ul class="dropdown_menu right">
+               <li class="menu_item"><a href="bloglist.html" class="menu_link">Blog List</a></li>
+               <li class="menu_item"><a href="classicblog.html" class="menu_link">Blog Classic</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="humberger_icon">
+          <span></span>
+        </div>
+      </nav>
+      <div class="hero portfolio">
+        <div class="hero_text">
+          <h1 class="hero_title">
+            Grid Three Column
+          </h1>
+        </div>
+    </div>
+    </div>
+  
+</header> 
+    <!-- Portfolio sectoion markup -->
+    <section class="portfolio three_column">
+        <div class="container">
+          <ul class="nav">
+            <li class="nav-item active" data-filter="*">All</li>
+            <li class="nav-item" data-filter=".branding">Branding</li>
+            <li class="nav-item" data-filter=".video">Illustration</li>
+            <li class="nav-item" data-filter=".image">Logo</li>
+          </ul>
+          <div
+            class="row g-lg-4 gy-4 row-cols-1 row-cols-md-3" id="portfolio_items">
+            <div class="item video">
+            <div class="col">
+              <div class="card">
+                <div class="portfolio_thumb">
+                  <img src="assets/img/flyer-min.jpg" alt="" />
+                </div>
+                <div class="card_box">
+                  <h2>Lightbox Project</h2>
+                  <p>Video</p>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="item image">
+            <div class="col">
+              <div class="card">
+                <div class="portfolio_thumb">
+                  <img src="assets/img/cosmetic-min-600x500.jpg" alt="" />
+                </div>
+                <div class="card_box">
+                  <h2>Lightbox Project</h2>
+                  <p>Image</p>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="item branding">
+            <div class="col">
+              <div class="card">
+                <div class="portfolio_thumb">
+                  <img src="assets/img/catalogue-600x500.jpg" alt="" />
+                </div>
+                <div class="card_box">
+                  <h2>Catalogue</h2>
+                  <p>Branding</p>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="item video">
+            <div class="col">
+              <div class="card">
+                <div class="portfolio_thumb">
+                  <img src="assets/img/jar-600x500.jpg" alt="" />
+                </div>
+                <div class="card_box">
+                  <h2>Small Jar</h2>
+                  <p>Art</p>
+                </div>
+              </div>
+              </div>
+            </div>
+  
+            <div class="item video">
+            <div class="col">
+              <div class="card">
+                <div class="portfolio_thumb">
+                  <img src="assets/img/cardboard-min-1-600x500.jpg" alt="" />
+                </div>
+                <div class="card_box">
+                  <h2>Funky Paper</h2>
+                  <p>Identity</p>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="item video">
+            <div class="col">
+              <div class="card">
+                <div class="portfolio_thumb">
+                  <img src="assets/img/pillow-min-600x500.jpg" alt="" />
+                </div>
+                <div class="card_box">
+                  <h2>Cousion Mockup</h2>
+                  <p>Photoshop</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>   
+    <!-- Footer sectoion markup -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row row-cols-2 footer_items">
+          <div class="col">
+            <p>&copy; 2020 Caliber Themes</p>
+          </div>
+          <div class="col social_icon">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.google.com/">
+                  <i class="fab fa-dribbble"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.pinterest.com/">
+                  <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Top button design -->
+    <div class="top_btn" id="scrollTopBtn">
+      <i class="fa-solid fa-angle-up"></i>
+    </div>
+    <script src="assets/js/plugins/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/jquery.min.js"></script>
+    <script src="assets/js/plugins/isotope.pkgd.min.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

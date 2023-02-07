@@ -1,0 +1,262 @@
+/*Tablet responsive*/
+@media only screen and (max-width:768px) {
+  br {
+    display: none;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .menu_lists {
+    display: none;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    flex-flow: column;
+    width: 100%;
+    z-index: 99;
+    background-color: #151515;
+
+    li {
+      padding-left: 0;
+      padding-right: 0;
+      text-align: left;
+      position: relative;
+      border-bottom: 1px solid #252525;
+
+      &:hover>.dropdown_menu {
+        width: 100%;
+        position: relative;
+        background-color: #151515;
+      }
+    }
+
+    .menu_link {
+      padding-left: 10px;
+      color: #ffffff !important;
+      font-size: 13px;
+      font-weight: 500;
+    }
+  }
+
+  .dropdown_menu {
+    padding: 0;
+    left: 0;
+
+    li {
+      width: 100%;
+
+      &:hover>.deep_dropdown_menu {
+        position: relative;
+      }
+    }
+
+    .menu_link {
+      text-transform: uppercase !important;
+      padding-left: 20px;
+    }
+  }
+
+  .dropdown_menu {
+    transition: .5s ease-in-out;
+    background-color: #151515 !important;
+
+    li {
+      &:hover {
+        background-color: #151515 !important;
+      }
+
+      .menu_link {
+        .active {
+          color: #707070 !important;
+        }
+      }
+    }
+  }
+
+  .deep_dropdown_menu {
+    top: 0;
+    left: 0;
+    border: 0;
+    background-color: #151515 !important;
+
+    li {
+      padding: 0 !important;
+    }
+
+    .menu_link {
+      padding-left: 30px;
+      .active {
+        color: #707070 !important;
+      }
+    }
+  }
+
+  #navbar {
+    padding: 15px 0;
+    align-items: center;
+  }
+
+  .humberger_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+
+    .close {
+      background: transparent;
+    }
+
+    .close::after,
+    .close::before {
+      position: absolute;
+      top: 0;
+      background-color: #151515;
+    }
+
+    .close::after {
+      transform: rotate(-45deg);
+      transition: all .2s ease-in-out;
+    }
+
+    .close::before {
+      transform: rotate(45deg);
+      transition: all .2s ease-in-out;
+    }
+  }
+
+  .menu_item {
+    padding: 0;
+    border: none !important;
+  }
+
+  .menu_link {
+    display: block;
+    padding: 12px 22px;
+    border-bottom: 1px solid #252525;
+  }
+
+  .menu_link.active {
+    color: #707070 !important;
+  }
+
+  .card {
+    &:hover .card_box {
+      left: -4%;
+    }
+  }
+  .four_column {
+    .card {
+      &:hover .card_box {
+        h2 {
+          top: 39%;
+        }
+        p {
+          bottom: 39%;
+        }
+      }
+    }
+  }
+  .get_in_touch {
+    flex-direction: column;
+    align-items: center;
+
+    .heading {
+      font-size: 44px;
+      margin-bottom: 20px !important;
+    }
+  }
+
+  .contact {
+    .hero_title {
+      font-size: 44px;
+    }
+
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .service_list {
+    .service_details {
+      padding-left: 25px !important;
+
+      .title {
+        margin-bottom: 5px !important;
+      }
+    }
+  }
+
+  .post_details {
+    padding-left: 0 !important;
+    text-align: left;
+  }
+
+  .top_btn {
+    right: 20px;
+    bottom: 80px;
+  }
+}
+/*Mobide Responsive*/
+@media only screen and (max-width:390px) {
+  .hero {
+    .hero_title {
+      font-size: 34px;
+      line-height: 1.3em;
+    }
+  }
+.portfolio{
+  padding: 30px 0 20px 0;
+  .hero_title {
+    font-size: 44px;
+
+  }
+}
+  .contact {
+    padding: 20px 10px;
+  }
+
+  .get_in_touch {
+    padding: 50px 20px !important;
+
+    .heading {
+      font-size: 34px;
+    }
+  }
+.nav-item::after{
+  display: none;
+}
+  .post_details {
+    .nav-item {
+      font-size: 14px;
+      padding: 5px 9px !important;
+
+      &:first-child {
+        padding-left: 0 !important;
+      }
+
+      &:last-child {
+        padding-right: 0 !important;
+      }
+    }
+
+    .subtitle {
+      font-size: 14px;
+    }
+  }
+
+  iframe {
+    height: 220px;
+  }
+  .comment_item{
+   &:nth-child(even){
+    margin-left: 0 !important;
+   }
+  }
+  .reply_btn{
+ margin-left: auto !important;
+  
+  }
+}
